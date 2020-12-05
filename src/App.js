@@ -1,26 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class MyComponent extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      name: "Demetrio",
+      count: 0,
+    };
+  }
+
+  clickEvent() {
+    alert(this.state.name);
+  }
+
+  handleCount() {
+    this.setState({
+      count: this.state.count + 1,
+    });
+  }
+
+  componentDidMount() {
+    console.log(`—componentDidMount—-`);
+  }
+
+  componentDidUpdate() {
+    console.log(`—-component did update—-`);
+  }
+
+  componentWillUnmount() {
+    console.log(`—-component will unmount—-`);
+  }
+
+  render() {
+    console.log(`-- render method --`);
+    return (
+      <div>
+        <Header>{this.state.name}</Header>
+        <button onClick={() => this.clickEvent()}>Click me!</button>
+        <button onClick={() => this.handleCount()}>
+          Click me to see the magic!
+        </button>
+        <h1>{this.state.count}</h1>
+      </div>
+    );
+  }
 }
 
-export default App;
+function Header(props) {
+  return <header>This is my name: {props.children}</header>;
+}
+
+export default MyComponent;
