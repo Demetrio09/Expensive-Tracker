@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can check this app @ https://2020-expense-tracker.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -61,7 +63,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Check out @ https://2020-expense-tracker.netlify.app/
 
 ### `npm run build` fails to minify
 
