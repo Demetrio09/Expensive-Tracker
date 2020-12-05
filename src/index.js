@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import App from "./HigherOrderComp";
-import MyComponent from "./App";
+import App from "./App";
 
-ReactDOM.render(<MyComponent />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
