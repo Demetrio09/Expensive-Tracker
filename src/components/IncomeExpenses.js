@@ -10,7 +10,7 @@ export default function IncomeExpenses() {
         </p>
       </div>
       <div>
-        <h4>Expensives</h4>
+        <h4>Expenses</h4>
         <p id='money-minus' className='money minus'>
           -$0.00
         </p>
